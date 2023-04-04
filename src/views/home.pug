@@ -1,4 +1,11 @@
 extends base
 
 block content
-    div
+    ul
+        li song.title
+            p ____ 나는 노래 들을래
+        li song.artist
+            p 나는 ____ 노래 들을래
+    form(action='/search', method='get')
+        input(type='text', placeholder='Search by term...', name='term')
+        input(type='submit', value='Search')
